@@ -10,11 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".java.MainActivity"/>
-
-        <activity android:name=".kotlin.MainActivity"/>
-
-        <activity android:name=".EntryChoiceActivity">
+        <activity android:name=".kotlin.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

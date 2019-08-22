@@ -2,9 +2,7 @@ package com.google.firebase.quickstart.perfmon.kotlin
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.crashlytics.android.Crashlytics
 import com.google.firebase.quickstart.perfmon.R
-import kotlinx.android.synthetic.main.activity_main.*
 import java.util.concurrent.CountDownLatch
 
 class MainActivity : AppCompatActivity() {
@@ -14,10 +12,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        button.setOnClickListener {
-            Crashlytics.getInstance().crash() // Force a crash
-        }
 
     }
 
